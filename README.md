@@ -12,9 +12,9 @@
     PySpark all set operation functions.
     <br />
     <br />
-    <a href="https://github.com/BankNatchapol/PySpark-Word-Count/issues">Report Bug</a>
+    <a href="https://github.com/BankNatchapol/PySpark-Set-Operations/issues">Report Bug</a>
     ·
-    <a href="https://github.com/BankNatchapol/PySpark-Word-Count/issues">Request Feature</a>
+    <a href="https://github.com/BankNatchapol/PySpark-Set-Operations/issues">Request Feature</a>
   </p>
 </p>
 
@@ -45,17 +45,39 @@ you can install spark follow this link [Spark](https://spark.apache.org/download
 
 <!-- DATASET -->
 ## Dataset
-you can download this large text file follow this link [Text file](https://www.learningcontainer.com/sample-text-file/)
+there are 2 data files. <br>
+"in/nasa_19950701.tsv" file contains 10000 log lines from one of NASA's apache server for July 1st, 1995.
+> nasa_19950701.tsv <br>
+
+"in/nasa_19950801.tsv" file contains 10000 log lines for August 1st, 1995
+> nasa_19950801.tsv
 
 <!-- SUBMITTING -->
 ## Submitting 
- run this command to submit text data and get word count output in out folder.<br>
-To get all airports in Thailand.
-> spark-submit WordCount.py
+there are 6 set operation function files.<br>
+### Sample 
+get random sample records from the dataset.
+> spark-submit nasa_sample.py
 
-output : <br>
-<img src="./images/wordCountJson.png">
+### Distinct 
+drop the duplicate rows (all columns) from dataset.
+> spark-submit nasa_distinct.py
 
+### Union 
+combine two dataset’s of the same structure/schema. 
+> spark-submit nasa_union.py
+
+### Intersection 
+combine two dataset’s of the same structure/schema and remove all duplicate. 
+> spark-submit nasa_intersection.py
+
+### Subtract 
+get data in first dataset that does not contain in second dataset.  
+> spark-submit nasa_subtract.py
+
+### Cartesian 
+get Cartesian product of 2 datasets.  
+> spark-submit nasa_cartesian.py
 
 <!-- CONTACT -->
 ## Contact
