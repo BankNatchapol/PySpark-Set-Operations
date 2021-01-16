@@ -84,7 +84,7 @@ get Cartesian product of 2 datasets.
 
 Facebook - [@Natchapol Patamawisut](https://www.facebook.com/natchapol.patamawisut/)
 
-Project Link: [https://github.com/BankNatchapol/PySpark-Word-Count](https://github.com/BankNatchapol/PySpark-Word-Count)
+Project Link: [https://github.com/BankNatchapol/PySpark-Set-Operations](https://github.com/BankNatchapol/PySpark-Set-Operations)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
